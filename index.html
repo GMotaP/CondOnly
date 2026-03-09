@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Status dos Carregadores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand" aria-label="INCHARGE logo"></div>
+    <h1>Status dos Carregadores</h1>
+    <p id="last-update"></p>
+  </header>
+
+  <div id="scale-root" class="scale-root">
+    <div class="legend">
+      <div class="legend-container">
+        <div class="legend-item">
+          <div class="legend-color" style="background:linear-gradient(135deg,#4caf50,#66bb6a)"></div>
+          <span>Disponível</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:linear-gradient(135deg,#006400,#228b22)"></div>
+          <span>Preparando</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:linear-gradient(135deg,#ffd700,#ffeb3b)"></div>
+          <span>Finalizando</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))"></div>
+          <span>Carregando</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background:linear-gradient(135deg,#2c2c2c,#1a1a1a);opacity:.6"></div>
+          <span>Offline</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="locations-container" id="locations">
+        <div class="loading">Carregando informações dos carregadores...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
